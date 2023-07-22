@@ -1,5 +1,5 @@
 exports.allAccess = (req, res) => {
-    res.status(200).send("Public Content.");
+    res.status(200).send("Race with time on TodoNow !");
 };
 
 exports.userBoard = (req, res) => {
@@ -7,9 +7,9 @@ exports.userBoard = (req, res) => {
 };
 
 exports.adminBoard = (req, res) => {
-    res.status(200).send("Admin Content.");
+    res.status(200).send("Race with time on TodoNow !");
 };
 
 exports.moderatorBoard = (req, res) => {
-    res.status(200).send("Moderator Content.");
+    res.status(200).send("Race with time on TodoNow !");
 };

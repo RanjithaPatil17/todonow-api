@@ -12,8 +12,8 @@ module.exports = function (app) {
 
 	app.post("/api/todo/create", [authJwt.verifyToken], controller.createTodo);
 	app.get("/api/todo/list", [authJwt.verifyToken], controller.listTodo);
-	app.get("/api/todo/detail/:id", [authJwt.verifyToken], controller.detailTodo);
-	app.put("/api/todo/update/:id", [authJwt.verifyToken], controller.updateTodo);
-	app.delete("/api/todo/delete/:id", [authJwt.verifyToken], controller.deleteTodo);
+    app.get("/api/todo/:id/detail", [authJwt.verifyToken], controller.detailTodo);
+    app.put("/api/todo/:id/update", [authJwt.verifyToken], controller.updateTodo);
+    app.delete("/api/todo/:id/delete", [authJwt.verifyToken], controller.deleteTodo);
 
 };

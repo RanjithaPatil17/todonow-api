@@ -37,8 +37,8 @@ function logResponseBody(req, res, next) {
         if (chunk)
             chunks.push(chunk);
 
-        var body = Buffer.concat(chunks).toString('utf8');
-        console.log(req.path, body);
+        // var body = Buffer.concat(chunks).toString('utf8');
+        // console.log(req.path, body);
 
         oldEnd.apply(res, arguments);
     };
